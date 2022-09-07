@@ -1,3 +1,5 @@
+$source  = "WIKIPEDIA"
+
 class Person
   #getter setter
   attr_accessor :name, :age, :profession
@@ -5,7 +7,7 @@ class Person
 
   @@max_age = 100
   def self.define
-    puts "a Person is a being created by god to worship him and lives from 0 to #{@@max_age} years old"
+    puts "a Person is a being created by god to worship him and lives from 0 to #{@@max_age} years old from #{$source}"
   end
 
   def initialize(fullname, age, profession)
