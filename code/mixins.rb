@@ -1,6 +1,8 @@
 #Module for thinking
 module Mind
 
+  attr_accessor :s
+
   def think
     puts 'This guy uses his head'
   end
@@ -11,6 +13,10 @@ module Mind
 
   def soft
     puts 'This guy got some soft skills'
+  end
+
+  def learn
+    puts "All '#{s}' were learned by this guy"
   end
 
 end
@@ -38,3 +44,8 @@ end
 #############
 SmartEngineer::new.think
 DumbENgineer::new.hard
+
+#
+se = SmartEngineer::new
+se.s = ["Java", "Ruby", "ANdroid", "FLutter", "SPringboot"]
+se.learn
